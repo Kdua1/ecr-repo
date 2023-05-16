@@ -36,7 +36,7 @@ jobs:
             IMAGE_TAG: Sample-app
           run: |
             docker build -t $ECR_REGISTRY.dkr.ecr.us-east-1.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG .
-            docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+            docker push $ECR_REGISTRY.dkr.ecr.us-east-1.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG
        
   
        
